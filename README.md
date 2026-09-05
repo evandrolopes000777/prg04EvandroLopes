@@ -4,7 +4,6 @@ Este projeto abriga a interface web para o Sistema de Gestão de Academia, com o
 
 ## 🎯 Funcionalidades
 
-
 * **Autenticação de Usuários:** Telas de login para acesso ao sistema
 
 * **Gestão de Alunos:** Telas para cadastrar, listar, buscar e editar os dados dos alunos
@@ -19,7 +18,11 @@ O layout e as permissões de acesso serão divididos entre dois atores principai
 
 * 📄 **`index.html`**: O arquivo principal e ponto de entrada da aplicação.
 
-* 📁 **`assets/icon/icone.ico`**: Ícone (favicon) de identificação da aplicação que é exibido na aba do navegador.
+* 📄 **`atividade-03.html`**: Página contendo a lista de exercícios e carregamento de imagens responsivas.
+
+* 📁 **`assets/icons/icone.ico`**: Ícone (favicon) de identificação da aplicação que é exibido na aba do navegador.
+
+* 📁 **`assets/images/`**: Pasta contendo as imagens da aplicação.
 
 * 📁 **`css/`**: Pasta criada para armazenar as folhas de estilo.
 
