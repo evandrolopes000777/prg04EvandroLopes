@@ -20,15 +20,19 @@ O layout e as permissões de acesso serão divididos entre dois atores principai
 
 * 📄 **`atividade-03.html`**: Página contendo a lista de exercícios e carregamento de imagens responsivas.
 
+* 📄 **`sandbox.html`**: pagina utilizada para testar os conceitos aprendidos.
+
 * 📁 **`assets/icons/icone.ico`**: Ícone (favicon) de identificação da aplicação que é exibido na aba do navegador.
 
 * 📁 **`assets/images/`**: Pasta contendo as imagens da aplicação.
+
+* 📁 **`assets/audio/`**: Pasta contendo os audios da aplicação.
 
 * 📁 **`css/`**: Pasta criada para armazenar as folhas de estilo.
 
 * 📁 **`js/`**: Pasta criada para armazenar os scripts da aplicação.
 
-*(As pastas `css` e `js` estão presentes na estrutura, mas aguardam a inclusão dos arquivos de código nas próximas etapas).*
+*(A pasta `js` está presente na estrutura, mas aguarda a inclusão dos arquivos de código nas próximas etapas).*
 
 ## 🚀 Evolução Futura da Estrutura
 
