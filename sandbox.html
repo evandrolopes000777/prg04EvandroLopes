@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SandBox</title>
+    <link rel="shortcut icon" href="assets/icons/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1>Teste de audio e video:</h1>
+
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/hxzGYPbtoCA?si=3zghbiaUFkAA3Qbs" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <audio controls preload="metadata">
+        <source src="assets/audio/teclado.mp3" type="audio/mpeg">
+
+        <p>Audio nao carregado</p>
+
+    </audio>
+
+    <p>
+        Obs: Para o vídeo do YouTube funcionar no VS Code, utilizei a extensão **Live Server**, pois ela executa o HTML em um servidor local em vez de abrir diretamente como arquivo, Isso permite que o YouTube identifique corretamente a origem da página e evita o erro 153.
+    </p>
+
+    <p>voltar para a <a href="index.html">pagina inicial</a></p>
+    
+</body>
+</html>
