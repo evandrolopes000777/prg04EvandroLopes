@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --cor-principal: #19AFFF;          
+    --cor-translucida: rgba(237, 242, 244, 0.4); 
+    --cor-destaque: #32CD32;
+}
+
+.paleta-cores {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.quadrado {
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    
+    
+    border: 5px solid rgba(255, 255, 255, 0.6); 
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.principal {
+    background-color: var(--cor-principal);
+}
+
+.translucido {
+    background-color: var(--cor-translucida);
+    backdrop-filter: blur(5px);
+}
+
+.destaque {
+    background-color: var(--cor-destaque);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center; 
+    justify-content: center; 
+    
+    min-height: 100vh; 
+    margin: 0;
+
+    background-image: url('../images/background/imagem_V1.0_IA.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.paleta-cores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+
+
+
+.container-vidro {
+    background-color: rgba(0, 0, 0, 0.142); 
+    
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); /* Suporte para navegadores baseados no Safari */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    
+    
+    /* texto */
+    padding: 40px;
+    text-align: center;
+    color: #ffff;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+}
+
+p{
+    max-width: 600px;
+    white-space: pre-wrap; 
+    text-align: justify;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+}
+
+a{
+    color: white;
+}
+
+.paragrafo1{
+    font-size: 20px;
+    font-family: cursive;
+}
+
