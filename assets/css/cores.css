@@ -114,3 +114,18 @@ a:hover{
     color: var(--cor-destaque);
 }
 
+.p_azul{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
+.p_translúcido{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
+.p_verde{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
