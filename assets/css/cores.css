@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
     --cor-principal: #19AFFF;          
@@ -86,12 +88,17 @@ p{
     max-width: 600px;
     white-space: pre-wrap; 
     text-align: justify;
-    font-family: "Oswald", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    
 }
 
 h1{
-    font-family: "Oswald", sans-serif;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
 a{
@@ -99,7 +106,11 @@ a{
 }
 
 .paragrafo1{
-    font-size: 20px;
-    font-family: cursive;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
+a:hover{
+    color: var(--cor-destaque);
 }
 
