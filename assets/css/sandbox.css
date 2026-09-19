@@ -12,6 +12,12 @@ h1 {
     color: rgb(47, 151, 243);
 }
 
+h2{
+    text-align: center; 
+    color: rgb(47, 151, 243);
+
+}
+
 iframe { 
     display: block; 
     margin: 0 auto 20px; 
