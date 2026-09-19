@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+:root {
+    --cor-principal: #19AFFF;          
+    --cor-translucida: rgba(237, 242, 244, 0.4); 
+    --cor-destaque: #32CD32;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center; 
+    justify-content: center; 
+    
+    min-height: 100vh; 
+    margin: 0;
+
+    background-image: url('../images/background/imagem_V1.0_IA.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-vidro {
+    background-color: rgba(0, 0, 0, 0.142); 
+    
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    
+    
+    /* texto */
+    padding: 40px;
+    text-align: center;
+    color: #ffff;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+}
+
+
+.container-topo{
+    background-color: rgba(0, 0, 0, 0.142);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-right: 30px;
+
+}
+
+   
+.container-footer{
+    background-color: rgba(0, 0, 0, 0.142);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+a{
+    color: #ffff;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: var(--cor-destaque);
+}
+
+h1{
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+footer {
+    text-align: center;
+    color: #ffff;
+    font-family: "Quicksand", sans-serif;
+}
+
+.textoMain{
+    max-width: 600px;
+    white-space: pre-wrap; 
+    text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    
+}
+
