@@ -3,36 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SandBox</title>
+    <title>SandBox - Aero Gym</title>
     <link rel="shortcut icon" href="assets/icons/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/sandbox.css">
 </head>
 <body>
 
-    <h1>Teste de audio e video:</h1>
+    <header class="container-topo">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="atividade-03.html">Atividade-03</a></li>
+                <li><a href="sandbox.html">SandBox</a></li>
+                <li><a href="cores.html">Página de teste de design</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/hxzGYPbtoCA?si=3zghbiaUFkAA3Qbs" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+    <div class="container-vidro">
+        <h1>Teste de áudio e vídeo:</h1>
 
-    <audio controls preload="metadata">
-        <source src="assets/audio/teclado.mp3" type="audio/mpeg">
+        <div class="video">
+            <iframe 
+                src="https://www.youtube.com/embed/hxzGYPbtoCA?si=3zghbiaUFkAA3Qbs" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
 
-        <p>Audio nao carregado</p>
+        <p class="textoMain">
+            Obs: Para o vídeo do YouTube funcionar no VS Code, utilizei a extensão **Live Server**, pois ela executa o HTML em um servidor local em vez de abrir diretamente como arquivo. Isso permite que o YouTube identifique corretamente a origem da página e evita o erro 153.
+        </p>
+    </div>
 
-    </audio>
+    <div class="container-audio">
+        <audio controls preload="metadata">
+            <source src="assets/audio/teclado.mp3" type="audio/mpeg">
+            <p>Audio não carregado</p>
+        </audio>
+    </div>
 
-    <p>
-        Obs: Para o vídeo do YouTube funcionar no VS Code, utilizei a extensão **Live Server**, pois ela executa o HTML em um servidor local em vez de abrir diretamente como arquivo, Isso permite que o YouTube identifique corretamente a origem da página e evita o erro 153.
-    </p>
-
-    <p>voltar para a <a href="index.html">pagina inicial</a></p>
+    <div class="container-footer">
+        <footer>
+            <p>&copy; Aero Gym — Sistema de gestão para academias</p>
+        </footer>
+    </div>
     
 </body>
 </html>
