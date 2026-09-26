@@ -140,6 +140,44 @@ footer p {
     letter-spacing: 1px;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+input{
+    background-color: var(--cor-translucida);
+    border-radius: 8px;
+    width: 400px;
+    height: 30px;
+}
+
+input::placeholder{
+    color: #414141;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+button{
+    background-color: var(--cor-translucida);
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    align-self: center;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+button:hover{
+   /*background-color: #32CD32;
+    NAO FUNCIONA!!!!!!!!!!!!!!!!    */
+}
+
 @media (max-width: 768px) {
     #menu ul {
         flex-direction: column;
