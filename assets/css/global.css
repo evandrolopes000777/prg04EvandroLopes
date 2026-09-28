@@ -37,8 +37,10 @@ header {
 
 #menu ul {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -59,26 +61,11 @@ header {
     color: var(--cor-destaque);
 }
 
-.container-vidro {
-    background-color: rgba(0, 0, 0, 0.142); 
-    backdrop-filter: blur(12px); 
-    -webkit-backdrop-filter: blur(12px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    color: #ffff;
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin-top: 120px;
-    margin-bottom: 80px;
-}
-
 .container-topo {
     background-color: rgba(0, 0, 0, 0.142);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0;
     width: 100%;
@@ -86,19 +73,82 @@ header {
     padding: 15px 0;
 }
 
-a {
+.container-vidro {
+    background-color: rgba(0, 0, 0, 0.142); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     color: #ffff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--cor-destaque);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+    width: 85%;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 h1 {
     font-family: "New Amsterdam", sans-serif;
     letter-spacing: 2px;
     font-weight: 400;
+    
+    font-size: 2rem;
+    text-align: center;
+}
+
+.textoMain {
+    max-width: 600px;
+    white-space: pre-wrap; 
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left; 
+    font-size: 0.95rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+input {
+    background-color: var(--cor-translucida);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    box-sizing: border-box; 
+}
+
+input::placeholder {
+    color: #414141;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button {
+    background-color: var(--cor-translucida);
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    align-self: center;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: #000;
 }
 
 .container-footer {
@@ -110,8 +160,6 @@ h1 {
     left: 0;
     width: 100%;
     padding: 15px 0;
-    
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,79 +178,42 @@ footer p {
     font-size: 0.9rem;
 }
 
-.textoMain {
-    max-width: 600px;
-    white-space: pre-wrap; 
-    text-align: justify;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-input{
-    background-color: var(--cor-translucida);
-    border-radius: 8px;
-    width: 400px;
-    height: 30px;
-}
-
-input::placeholder{
-    color: #414141;
-    font-family: 'Quicksand';
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-button{
-    background-color: var(--cor-translucida);
-    border-radius: 8px;
-    width: 200px;
-    height: 40px;
-    align-self: center;
-    font-family: 'Quicksand';
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.5s;
-}
-
-button:hover{
-   /*background-color: #32CD32;
-    NAO FUNCIONA!!!!!!!!!!!!!!!!    */
-}
-
-@media (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     #menu ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .container-vidro {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #menu ul {
+        flex-direction: row;
+        gap: 30px;
     }
 
     .container-topo {
-        position: relative; 
+        position: fixed;
     }
 
     .container-vidro {
-        width: 85%;
-        padding: 25px;
-        margin-top: 20px;
-        margin-bottom: 60px;
+        width: auto;
+        max-width: 800px;
+        padding: 40px;
+        margin-top: 120px;
+        margin-bottom: 80px;
     }
 
     h1 {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 2.5rem;
     }
 
     .textoMain {
-        text-align: left; 
-        font-size: 0.95rem;
+        text-align: justify;
+        font-size: 1rem;
     }
 }
