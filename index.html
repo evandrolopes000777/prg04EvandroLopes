@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/icons/icone.ico" type="image/x-icon">
     <title>Aero Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/global.css">
-
 </head>
 <body>
    
-    <header class="container-topo">
-        <nav id="menu">
-            <ul>
-                <li><a href="atividade-03.html">Atividade-03</a></li>
-                <li><a href="sandbox.html">SandBox</a></li>
-                <li><a href="cores.html">Página de teste de design</a></li>
-                <li><a href="formulario.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark container-topo">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aero Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="atividade-03.html">Atividade-03</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sandbox.html">SandBox</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cores.html">Página de teste de design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container-vidro">
+    <div class="container-vidro mx-auto">
         
-        <h1>Sistema Aero Gym</h1>
+        <h1 class="text-center text-primary mb-4">Sistema Aero Gym</h1>
 
-        <main>
-            <section>
-                <h2>Sobre o Aero Gym</h2>
-                <p class="textoMain">O Aero Gym é um sistema desenvolvido para facilitar a gestão de academias, reunindo em um único ambiente ferramentas para o cadastro de alunos, controle financeiro, organização de treinos e gerenciamento de acesso.</p>
+        <main class="row">
+            <section class="col-12 col-md-8 text-start">
+                <h2 class="h3">Sobre o Aero Gym</h2>
+                <p class="textoMain lead">O Aero Gym é um sistema desenvolvido para facilitar a gestão de academias, reunindo em um único ambiente ferramentas para o cadastro de alunos, controle financeiro, organização de treinos e gerenciamento de acesso.</p>
 
-                <article>
-                    <h2>Organização e praticidade</h2>
+                <article class="mt-4">
+                    <h2 class="h4">Organização e praticidade</h2>
                     <p class="textoMain">Com o Aero Gym, as principais informações da academia podem ser organizadas de forma simples e centralizada, facilitando o acompanhamento dos alunos e das atividades do dia a dia.</p>
                 </article>
-
             </section>
 
-            <aside>
-                <h2>Funcionalidades do sistema</h2>
-                <p class="textoMain">O sistema contará com recursos voltados para diferentes áreas da academia, permitindo administrar alunos, treinos, pagamentos e acessos de maneira integrada.</p>
+            <aside class="col-12 col-md-4 mt-4 mt-md-0">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-success text-center">Funcionalidades do sistema</h5>
+                        <p class="textoMain text-center mb-4">O sistema contará com recursos voltados para diferentes áreas da academia, permitindo administrar alunos, treinos, pagamentos e acessos de maneira integrada.</p>
+                        <a href="formulario.html" class="btn btn-primary mt-auto">Acessar Painel</a>
+                    </div>
+                </div>
             </aside>
         </main>
 
@@ -51,5 +61,6 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

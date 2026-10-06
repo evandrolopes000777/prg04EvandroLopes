@@ -12,17 +12,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
+    justify-content: flex-start;
     min-height: 100vh; 
     margin: 0;
-    background-image: url('../images/background/imagem_V1.0_IA.png');
+    
+    background-color: transparent !important; 
+    background-image: url('../images/background/imagem_V1.0_IA.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #ffff !important;
 }
 
-header {
+.container {
+    width: 100%;
+}
+
+header, .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +42,7 @@ header {
     margin-bottom: 20px;
 }
 
-#menu ul {
+#menu ul, .navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,23 +53,23 @@ header {
     margin: 0;
 }
 
-#menu li {
+#menu li, .nav-item {
     font-family: "Quicksand", sans-serif;
 }
 
-#menu a {
-    color: #ffff;
+#menu a, .nav-link, .navbar-brand {
+    color: #ffff !important;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.5s ease;
 }
 
-#menu a:hover {
-    color: var(--cor-destaque);
+#menu a:hover, .nav-link:hover {
+    color: var(--cor-destaque) !important;
 }
 
-.container-topo {
-    background-color: rgba(0, 0, 0, 0.142);
+.container-topo, .navbar {
+    background-color: rgba(0, 0, 0, 0.142) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     position: relative;
@@ -71,34 +78,48 @@ header {
     width: 100%;
     z-index: 1000;
     padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container-vidro, .card, .table-responsive {
+    background-color: rgba(0, 0, 0, 0.142) !important; 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 20px !important;
+    color: #ffff !important;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .container-vidro {
-    background-color: rgba(0, 0, 0, 0.142); 
-    backdrop-filter: blur(12px); 
-    -webkit-backdrop-filter: blur(12px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    color: #ffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    
     width: 85%;
     padding: 25px;
     margin-top: 20px;
     margin-bottom: 60px;
 }
 
-h1 {
+.card {
+    padding: 15px;
+}
+
+h1, .h4 {
     font-family: "New Amsterdam", sans-serif;
     letter-spacing: 2px;
     font-weight: 400;
-    
     font-size: 2rem;
     text-align: center;
+    color: #ffff !important;
 }
 
-.textoMain {
+h2, h3, h5, .card-title {
+    color: var(--cor-principal) !important;
+    font-family: "Quicksand", sans-serif;
+    -webkit-text-stroke: 0.4px black;
+
+}
+
+.textoMain, p, .lead, .card-text, label {
     max-width: 600px;
     white-space: pre-wrap; 
     font-family: "Quicksand", sans-serif;
@@ -107,33 +128,37 @@ h1 {
     letter-spacing: 1px;
     text-align: left; 
     font-size: 0.95rem;
+    color: #ffff !important;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+    align-items: center;
 }
 
-input {
-    background-color: var(--cor-translucida);
-    border-radius: 8px;
+input, .form-control {
+    background-color: var(--cor-translucida) !important;
+    border-radius: 8px !important;
     width: 100%;
     max-width: 400px;
-    height: 30px;
+    height: 40px; 
     box-sizing: border-box; 
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #fff !important;
 }
 
-input::placeholder {
-    color: #414141;
+input::placeholder, .form-control::placeholder {
+    color: #414141 !important;
     font-family: 'Quicksand';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 
-button {
-    background-color: var(--cor-translucida);
-    border-radius: 8px;
+button, .btn {
+    background-color: var(--cor-translucida) !important;
+    border-radius: 8px !important;
     width: 200px;
     height: 40px;
     align-self: center;
@@ -141,14 +166,32 @@ button {
     font-size: 20px;
     font-weight: 500;
     transition: 0.5s;
-    border: none;
-    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #fff !important;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: var(--cor-destaque);
-    color: #000;
+button:hover, .btn:hover {
+    background-color: var(--cor-destaque) !important;
+    color: #000 !important;
+}
+
+.table {
+    color: #ffff !important;
+    --bs-table-bg: transparent;
+    --bs-table-color: #ffff;
+}
+.table-dark th {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: var(--cor-principal);
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #fff !important;
+}
+.table-hover>tbody>tr:hover>* {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
 }
 
 .container-footer {
@@ -164,6 +207,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer {
@@ -179,7 +223,7 @@ footer p {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-    #menu ul {
+    #menu ul, .navbar-nav {
         flex-direction: row;
         gap: 20px;
     }
@@ -191,28 +235,33 @@ footer p {
 }
 
 @media (min-width: 1025px) {
-    #menu ul {
+    #menu ul, .navbar-nav {
         flex-direction: row;
         gap: 30px;
     }
 
-    .container-topo {
+    .container-topo, .navbar {
         position: fixed;
     }
 
     .container-vidro {
         width: auto;
-        max-width: 800px;
+        max-width: 1000px;
         padding: 40px;
         margin-top: 120px;
         margin-bottom: 80px;
+    }
+    
+    body {
+        padding-top: 100px;
+        padding-bottom: 80px;
     }
 
     h1 {
         font-size: 2.5rem;
     }
 
-    .textoMain {
+    .textoMain, p, .lead, .card-text {
         text-align: justify;
         font-size: 1rem;
     }
