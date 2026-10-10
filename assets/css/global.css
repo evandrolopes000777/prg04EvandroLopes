@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --cor-principal: #19AFFF;          
-    --cor-translucida: rgba(237, 242, 244, 0.4); 
-    --cor-destaque: #32CD32;
+    --cor-principal: #0E6CF0;          
+    --cor-translucida: rgba(237, 230, 244, 0.137); 
+    --cor-destaque: #0EF098;
+    --cor-ciano: #0EEFE5;
+    --titulo: #2D2D33;
 }
 
 body {
@@ -82,7 +84,7 @@ header, .navbar {
 }
 
 .container-vidro, .card, .table-responsive {
-    background-color: rgba(0, 0, 0, 0.142) !important; 
+    background-color: rgba(0, 0, 0, 0.200) !important; 
     backdrop-filter: blur(12px); 
     -webkit-backdrop-filter: blur(12px);
     border: 2px solid rgba(255, 255, 255, 0.3) !important;
@@ -92,36 +94,29 @@ header, .navbar {
     text-align: center;
 }
 
-.container-vidro {
-    width: 85%;
-    padding: 25px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
 
 .card {
     padding: 15px;
 }
 
-h1, .h4 {
-    font-family: "New Amsterdam", sans-serif;
+h1 {
     letter-spacing: 2px;
     font-weight: 400;
     font-size: 2rem;
     text-align: center;
-    color: #ffff !important;
 }
 
-h2, h3, h5, .card-title {
+
+h1, h2, h3, h5, .card-title {
     color: var(--cor-principal) !important;
     font-family: "Quicksand", sans-serif;
-    -webkit-text-stroke: 0.4px black;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
 
 }
 
 .textoMain, p, .lead, .card-text, label {
     max-width: 600px;
-    white-space: pre-wrap; 
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -129,6 +124,7 @@ h2, h3, h5, .card-title {
     text-align: left; 
     font-size: 0.95rem;
     color: #ffff !important;
+    text-align: justify;
 }
 
 form {
@@ -231,6 +227,10 @@ footer p {
     .container-vidro {
         width: 90%;
         padding: 30px;
+    }
+
+    .textoMain, p, .lead, .card-text {
+        text-align: justify;
     }
 }
 
