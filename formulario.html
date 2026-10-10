@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +9,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/global.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark container-topo">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Aero Gym</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menuNavegacao">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="atividade-03.html">Atividade-03</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sandbox.html">SandBox</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cores.html">Página de teste de design</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+<body>
     <div class="container-vidro mx-auto">
         <main>
-            <h1 class="mb-4">Faça o seu login!</h1>
+            <h1>Bem vindo ao Aero Gym!</h1>
+            <h2 class="mb-4">Faça o seu login!</h2>
             <form id="form-login">
                 <div class="form-group w-100" style="max-width: 400px;">
                     <label for="email" class="form-label text-start w-100">E-mail</label>
                     <input type="text" id="email" name="Usuario" class="form-control" placeholder="Digite seu e-mail">
-                    <span id="erro-email" style="color: #ff4d4d; font-size: 0.85rem; display: none; margin-bottom: 10px;"></span>
+                    <span id="erro-email"
+                        style="color: #ff4d4d; font-size: 0.85rem; display: none; margin-bottom: 10px;"></span>
                 </div>
                 <div class="form-group w-100" style="max-width: 400px;">
                     <label for="senha" class="form-label text-start w-100">Senha</label>
                     <input type="password" id="senha" name="Senha" class="form-control" placeholder="Digite sua Senha">
-                    <span id="erro-senha" style="color: #ff4d4d; font-size: 0.85rem; display: none; margin-bottom: 10px;"></span>
+                    <span id="erro-senha"
+                        style="color: #ff4d4d; font-size: 0.85rem; display: none; margin-bottom: 10px;"></span>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Login</button>
             </form>
         </main>
     </div>
-    
+
+    <div class="container-footer">
+        <footer>
+            <p>&copy; Aero Gym — Sistema de gestão para academias</p>
+        </footer>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/validarFormulario.js"></script>
 </body>
+
 </html>
